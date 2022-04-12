@@ -1,0 +1,35 @@
+.yar-badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    background: #555;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
+        0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+
+    transition: opacity 500ms, background 200ms;
+}
+
+.yar-badge.toggle {
+    background: #dd752b;
+}
+
+.yar-badge:hover {
+    opacity: 0.5;
+}
+
+.yar-badge:before {
+    content: "\21BB";
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    margin-top: -4px;
+}
